@@ -9,8 +9,6 @@ public class Department
     public string? Name { get; set; }
     public int Budget { get; set; }
     public DateTime StartDate { get; set; }
-    public int InstructorId { get; set; }
-    public virtual Instructor? Instructor { get; set; }
-    public int CourseId { get; set; }
-    public virtual Course? Course { get; set; }
+    public List<Instructor>? Instructors { get; set; }
+    public List<Course>? Courses { get; set; }
 }
